@@ -27,7 +27,9 @@ import {
 } from './data/constants';
 import { getBackendValidations, isFormValid, prepareRegistrationPayload } from './data/utils';
 import messages from './messages';
-import { EmailField, NameField, UsernameField } from './RegistrationFields';
+import {
+  EmailField, NameField, UsernameField,
+} from './RegistrationFields';
 import {
   InstitutionLogistration, PasswordField, RedirectLogistration, ThirdPartyAuthAlert,
 } from '../common-components';

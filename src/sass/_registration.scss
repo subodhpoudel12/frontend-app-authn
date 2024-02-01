@@ -1,13 +1,29 @@
+/* Button Styles */
 .register-button {
   min-width: 14.4rem;
+  background-color: #21262e; /* Google Blue */
+  color: #d1a7a7;
+  border: 2px solid #2b2d30;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
+.register-button:hover {
+  background-color: #151816; /* Google Green */
+}
+
+/* Form Styles */
 .pgn__form-autosuggest__wrapper > .pgn__form-group {
   margin-bottom: 0 !important;
 }
 
-.email-suggestion-alert-error  {
+/* Email Suggestion Styles */
+.email-suggestion-alert-error {
   padding: 0.5rem 1rem;
+  background-color: #292424; /* Red */
+  color: #fff;
 
   .email-suggestion__close {
     float: right;
@@ -22,25 +38,26 @@
     line-height: 1.25rem;
   }
 
-  .alert-link  {
-    color: $primary !important;
+  .alert-link {
+    color: #4285f4 !important; /* Google Blue */
 
     &:hover {
       text-decoration: underline;
-      color: $info-700 !important;
+      color: #1a73e8; /* Google Dark Blue */
     }
   }
 }
 
 .email-suggestion-alert-warning {
-  color: $info-500 !important;
+  color: #f4b400 !important; /* Yellow */
 
   &:hover {
     text-decoration: underline;
-    color: $info-700 !important;
+    color: #f4b400; /* Yellow */
   }
 }
 
+/* Checkbox Styles */
 .form-field--checkbox {
   .pgn__form-label {
     font-size: 0.75rem;
@@ -49,6 +66,7 @@
   margin-left: 3px;
 }
 
+/* Username Suggestions Styles */
 .username-suggestions--chip {
   padding: 1px 0.5rem;
   margin: 0.25rem;
@@ -56,7 +74,7 @@
   line-height: 24px;
   font-size: 12px;
   font-weight: normal;
-  color: $primary-700;
+  color: #4285f4; /* Google Blue */
 }
 
 .username-suggestion--label {
@@ -83,6 +101,7 @@
   margin-left: 15px;
 }
 
+/* Responsive Styles */
 .username-scroll-suggested--form-field {
   width: 20rem;
   white-space: nowrap;
@@ -99,7 +118,7 @@
   }
 }
 
-@media (max-width: map-get($grid-breakpoints, "sm")) {
+@media (max-width: 768px) {
   .username-scroll-suggested--form-field {
     width: 15rem;
   }
@@ -108,8 +127,10 @@
   }
 }
 
+/* Form Field Error Styles */
 .form-field-error {
-  border: 2px solid var(--danger-300, #CA3A2F) !important;
+  border: 2px solid #ca3a2f !important; /* Danger Red */
+  background-color: #ffdddd; /* Light Red */
 
   input {
     border: none;

@@ -404,7 +404,7 @@ describe('ThirdPartyAuth', () => {
       });
 
       const expectedMessage = `${'You\'ve successfully signed into Apple! We just need a little more information before '
-                              + 'you start learning with '}${ getConfig().SITE_NAME }.`;
+                              + 'you Explore and Learn Anywhere Anytime with '}${ getConfig().SITE_NAME }.`;
 
       const { container } = render(routerWrapper(reduxWrapper(<IntlRegistrationPage {...props} />)));
       const tpaAlert = container.querySelector('#tpa-alert p');
